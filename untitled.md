@@ -69,9 +69,32 @@ git pull origin master
 
 ### want to pull when I have unsaved changes
 
+remember you should have committed all your local changes if you want your git pill to turn smoothly 
+
 ```bash
+git pull origin master
+# failed due to the unsaved work in your local repository
+git checkout report.txt # discard the changes in you dental reposistoru
 
 ```
 
+### push my changes to a remote repository
 
+push the changes you have made locally into a remote repository
+
+```bash
+git push remote-name branch-name 
+# push the contents of your branch (branch-name) into a branch with the same name
+# in the remote repository associated with (remote-name)
+```
+
+## What happens if my push conflicts with someone else's work?
+
+```bash
+git origin master 
+# Git refused to excute your push to prevent you overwriting remote work
+git pull origin master # bring your repository up to date with origin
+# it will open up an editor that you can exit with Ctrl+X
+
+```
 
