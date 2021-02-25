@@ -142,7 +142,18 @@ git branch # lsit all of branches in a repository
 git diff branch-1..branch-2 # view the differences between branches
 ```
 
+```bash
+git checkout summary-statistics # switch from the current branch to branch summary-statistics
+git rm report.txt # remove report.txt
+git commit -m "Removing report" # commit your change
+ls # check that it's gone
+git checkout master # switch back to the master branch
+ls # to ensure that report.txt is still there
+```
 
+```bash
+
+```
 
 
 
