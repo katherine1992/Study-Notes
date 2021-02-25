@@ -38,3 +38,40 @@ index e713b17..4c0742a 100644
 +# TODO: write new summary
 ```
 
+### Save changes
+
+```bash
+git add # Add one or more files to the staging area
+git diff -r HEAD # To see how file differ from the last saved version
+                 #  -r  compare to a particular version
+                 #  HEAD the most recent commit
+git diff -r HEAD path/to/file # view the changes in that file (only that file)
+git commit -m "message contents" # save the changes in the staging area
+```
+
+### text editor - Nano
+
+```bash
+nano filename # open a file for editing 
+              # or create a new one if it doesn't exist
+# ctrl-O write the file out
+# ENTER -> confirm the filename
+# Ctrl-X -> exit the editor
+```
+
+### View a respository's history
+
+```bash
+git log # To view the log of the project's history
+# space bar -> go down a page
+# q -> quit
+```
+
+### View a specific file's history
+
+```bash
+git log path
+```
+
+
+
