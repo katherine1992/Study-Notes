@@ -1,25 +1,52 @@
-# Untitled
+# page 2
 
-## Getting Super Powers
+### create a branch & switch to that branch
 
-Becoming a super hero is a fairly straight forward process:
-
-```
-$ give me super-powers
-```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-{% code title="hello.sh" %}
 ```bash
-# Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the
+git checkout branch_name # switch to that branch
+git checkout -b branch_name # create and switch to that branch
 ```
-{% endcode %}
+
+### merge two branch
+
+```bash
+git merge summary-statistics master # merge one branch (source = summary-statistics) into another (destination = master)
+```
+
+### Conflict
+
+```bash
+# there is a conflict during the merge
+git status # tell you which files have conflicts that you need to solve
+```
+
+### create a brand new repository
+
+```bash
+git init optical
+```
+
+### Turn an existing project into a Git repository
+
+```bash
+pwd # current directory dental, which is not yet a Git repository
+git init # Initiate a folder into a Git repository
+```
+
+### Create a copy of an existing repository - clone
+
+```bash
+git clone URL # URL identifies the reposiroty you want to clone
+git clone /exisiting/project newprojectname
+```
+
+### Find out where a cloned repository originated
+
+```bash
+git remote # Git remember where the origial reposistory was
+# it does this by storing a remote om the new repository's configuration
+git remote -v # v for verbose which shows remote's URLs
+```
 
 
 
